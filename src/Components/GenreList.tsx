@@ -20,10 +20,10 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
   if (error) return null;
   if (isLoading) return <Spinner />;
   return (
-    <List>
+    <List spacing={3}>
       {data.map((genre) => (
         <ListItem key={genre.id}>
-          <HStack paddingY={1}>
+          <HStack paddingY={1} overflow="hidden" wrap="wrap">
             <Image
               boxSize="32px"
               borderRadius={8}
