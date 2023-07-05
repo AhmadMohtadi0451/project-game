@@ -2,6 +2,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import useGames from "../Hook/useGames";
 import { Box, Heading, Spinner, Text } from "@chakra-ui/react";
+import ExpandableText from "../Components/ExpandableText";
 
 type Props = {};
 
@@ -16,7 +17,7 @@ const GameDetailPage = (props: Props) => {
     <>
       <Box padding={5}>
         <Heading>{data.name}</Heading>
-        <Text>{data.description_raw}</Text>
+        <ExpandableText>{data.description_raw}</ExpandableText>
       </Box>
     </>
   );
