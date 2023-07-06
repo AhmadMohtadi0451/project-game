@@ -21,7 +21,7 @@ const HomePage = (props: Props) => {
         }}
       >
         <Show above="lg">
-          <GridItem area={"aside"} paddingX={5}>
+          <GridItem area={"aside"} padding={5}>
             <GenreList />
           </GridItem>
         </Show>
