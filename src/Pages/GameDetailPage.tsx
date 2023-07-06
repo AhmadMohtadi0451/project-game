@@ -5,6 +5,7 @@ import useGames from "../Hook/useGames";
 import DefinitionItem from "../Components/DefinitionItem";
 import CriticScore from "../Components/CriticScore";
 import GameAttributes from "../Components/GameAttributes";
+import GameTrailer from "../Components/GameTrailer";
 
 type Props = {};
 
@@ -21,6 +22,7 @@ const GameDetailPage = (props: Props) => {
         <Heading>{data.name}</Heading>
         <ExpandableText>{data.description_raw}</ExpandableText>
         <GameAttributes game={data} />
+        <GameTrailer gameId={data.id} />
       </Box>
     </>
   );
