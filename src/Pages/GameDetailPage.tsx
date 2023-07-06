@@ -6,6 +6,7 @@ import DefinitionItem from "../Components/DefinitionItem";
 import CriticScore from "../Components/CriticScore";
 import GameAttributes from "../Components/GameAttributes";
 import GameTrailer from "../Components/GameTrailer";
+import GameScreenshots from "../Components/GameScreenshots";
 
 type Props = {};
 
@@ -23,6 +24,7 @@ const GameDetailPage = (props: Props) => {
         <ExpandableText>{data.description_raw}</ExpandableText>
         <GameAttributes game={data} />
         <GameTrailer gameId={data.id} />
+        <GameScreenshots gameId={data.id} />
       </Box>
     </>
   );
